@@ -6,12 +6,12 @@
   <p>Usuario: Pepe</p>
   <input [(ngModel)]="mensaje" placeholder="Escribe un mensaje">
     <p>{{ mensaje }}</p>
-  <button class="btn btn-primary">Guardar</button>
+  <button class="btn btn-primary" (click)="emitirMensaje1()">Guardar</button>
 </div>
 <div class="card mt-2">
-  <p> Usuario Maria</p>
+  <p> Usuario: Maria</p>
   <input [(ngModel)]="mensaje2" placeholder="Escribe un mensaje">
   <p>{{ mensaje2 }}</p>
-  <button class="btn btn-primary" onclick="emitirMensaje">Guardar</button>
+  <button class="btn btn-primary" (click)="emitirMensaje2()">Guardar</button>
 </div>
 
