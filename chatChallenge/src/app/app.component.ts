@@ -15,5 +15,9 @@ export class AppComponent {
   
   title = 'chatChallenge'
   @Input() mensaje : string = "";
-  @Input() mensaje2 : string = ""
+  @Input() mensaje2 : string = "";
+  emitirMensaje(){
+    console.log(this.mensaje)
+  }
+  
 }
